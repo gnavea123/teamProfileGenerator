@@ -19,16 +19,16 @@ In order to run the application it will be necesary to ensure that the following
 - node
 - [Jest](https://www.npmjs.com/package/jest)
 - [Inquirer](https://www.npmjs.com/package/inquirer)
-  The corresponding packge.json file will indicate the versions required to run the application
 
-standard installation steps
+The corresponding packge.json file will indicate the versions required to run the application
 
 ## Usage
 
 Instructions and examples for use:
 
 The application will use [Jest] for running the unit tests and [Inquirer] for collecting input from the user.
-The application will be invoked by using the following command:
+Make sure that once you have cloned the source code to your local environment to navigate to the starter folder.
+While located at the root of the Starter folder, the application will be invoked by using the following command:
 
 ```bash
 node index.js
