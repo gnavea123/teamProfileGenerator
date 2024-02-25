@@ -1,6 +1,6 @@
 # teamProfileGenerator
 
-The Challenge this week is to take the given starter code and convert it into a working Node.js command-line application. This application will take in information about employees on a software engineering team, then generates an HTML webpage that displays summaries for each person. Will need to ensure that the code passes of the created tests.
+The Challenge this week is to take the given starter code and convert it into a working Node.js command-line application. This application will take in information about employees on a software engineering team, then generates an HTML webpage that displays summaries for each person. Will need to ensure that the code passes all of the created tests.
 
 ## Table of Contents
 
@@ -50,7 +50,22 @@ _Tests for application and how to run them:_
 
 All tests are run using Jest and are within the _tests_ folder. Any addition to the code will need the corresponding test scripts to be added to this folder.
 
----
+## Screen Capture of all Tests executed
+1. Employee Class Test
+
+![alt text](Employee_testOutput.png)
+
+2.Manager Class Test
+![alt text](Manager_testOutput.png)
+
+3. Engineer Class Test
+
+![alt text](Engineer_testOutput.png)
+
+4. Intern Class Test
+
+![alt text](Intern_testOutput.png)
+
 
 ## Questions?
 
