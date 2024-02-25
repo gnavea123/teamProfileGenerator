@@ -11,7 +11,8 @@ const fs = require("fs");
 const util = require('util');// a node utility
 
 // const generateHTML = require("./lib/generateHTML.js");
-const generateHTML = require("./lib/generateHTML");
+//const generateHTML = require("./lib/generateHTML");
+const generateHTML = require("./lib/generatefile.js");
 
 // const OUTPUT_DIR = path.resolve(__dirname, "output");
 // const outputPath = path.join(OUTPUT_DIR, "team.html");
@@ -121,13 +122,14 @@ const init = async () => {
     console.log("value of answers Input:");
    
     console.log(answers);
+    //const html = generateHTML(answers);
     const html = generateHTML(answers);
     console.log("value of HTML file");
     console.log(html);
 
-    const _html="Test Message to save"
+    //const _html="Test Message to save"
 
-    await writeFileAsync(fileName, _html);
+    await writeFileAsync(fileName,html);
     
     // fs.writeFile(fileName, "Hello Node.js", (err) => {
     //   if (err) throw err;
