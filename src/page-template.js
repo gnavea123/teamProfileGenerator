@@ -43,6 +43,8 @@ const generateTeam = team => {
     const generateIntern = intern => {
         return `
         <div class="card employee-card">
+        <p>
+        <p>
     <div class="card-header">
         <h2 class="card-title">${intern.getName()}</h2>
         <h3 class="card-title"><i class="fas fa-user-graduate mr-2"></i>${intern.getRole()}</h3>
@@ -112,6 +114,7 @@ module.exports = team => {
             </div>
         </div>
     </div>
+    
 </body>
 </html>
     `;

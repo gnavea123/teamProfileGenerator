@@ -11,8 +11,9 @@ const fs = require("fs");
 const util = require('util');// a node utility
 
 // const generateHTML = require("./lib/generateHTML.js");
-//const generateHTML = require("./lib/generateHTML");
-const generateHTML = require("./lib/generatefile.js");
+
+//const generateHTML = require("./lib/generatefile.js");
+const generateHTML = require("./lib/generateHTML.js");
 
 // const OUTPUT_DIR = path.resolve(__dirname, "output");
 // const outputPath = path.join(OUTPUT_DIR, "team.html");
@@ -124,6 +125,7 @@ const init = async () => {
     console.log(answers);
     //const html = generateHTML(answers);
     const html = generateHTML(answers);
+
     console.log("value of HTML file");
     console.log(html);
 
