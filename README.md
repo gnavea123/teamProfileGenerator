@@ -36,6 +36,8 @@ node index.js
 
 ## Screen captures of live application
 
+![alt text](LiveAppScreenCapture.png)
+
 ## License
 
 MIT
