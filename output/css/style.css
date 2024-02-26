@@ -1,0 +1,18 @@
+.body {
+  display:grid;
+  grid-template-rows: auto;
+  grid-template-columns: auto;
+  
+}
+
+.card-header{
+  background-color: rgb(9, 100, 236);
+  color: aliceblue;
+}
+
+.card-body {
+background-color: beige;
+}
+.card.employee-card{
+  gap: 30px;
+} 

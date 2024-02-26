@@ -15,8 +15,8 @@ const util = require('util');// a node utility
 //const generateHTML = require("./lib/generatefile.js");
 const generateHTML = require("./lib/generateHTML.js");
 
-// const OUTPUT_DIR = path.resolve(__dirname, "output");
-// const outputPath = path.join(OUTPUT_DIR, "team.html");
+ const OUTPUT_DIR = path.resolve(__dirname, "output");
+ const outputPath = path.join(OUTPUT_DIR, "team.html");
 
 //const render = require("./src/page-template.js");
 
@@ -69,6 +69,46 @@ const questions = () => {
     },
     {
       type: "input",
+      name: "nameEngineer2",
+      message: "Please enter your name for the Engineer2:\n",
+    },
+    {
+      type: "input",
+      name: "idEngineer2",
+      message: "Please enter current Engineer2 id:\n",
+    },
+    {
+      type: "input",
+      name: "emailEngineer2",
+      message: "Please enter Engineer2 eMail:\n",
+    },
+    {
+      type: "input",
+      name: "githubUser2",
+      message: "Please enter Engineer2 githubUser:\n",
+    },
+    {
+      type: "input",
+      name: "nameEngineer3",
+      message: "Please enter your name for the Engineer3:\n",
+    },
+    {
+      type: "input",
+      name: "idEngineer3",
+      message: "Please enter current Engineer3 id:\n",
+    },
+    {
+      type: "input",
+      name: "emailEngineer3",
+      message: "Please enter Engineer3 eMail:\n",
+    },
+    {
+      type: "input",
+      name: "githubUser3",
+      message: "Please enter Engineer3 githubUser:\n",
+    },
+    {
+      type: "input",
       name: "nameIntern",
       message: "Please enter your name for the Intern:\n",
     },
@@ -115,23 +155,19 @@ const init = async () => {
     console.log("Intern Details:");
     console.log(empIntern);
     //
-    //
-
-    //
-
-    // const userInfo = answers.email;
+ 
     console.log("value of answers Input:");
    
-    console.log(answers);
-    //const html = generateHTML(answers);
+    //console.log(answers);
+
     const html = generateHTML(answers);
 
     console.log("value of HTML file");
-    console.log(html);
+    //console.log(html);
 
     //const _html="Test Message to save"
 
-    await writeFileAsync(fileName,html);
+    await writeFileAsync(outputPath,html);
     
     // fs.writeFile(fileName, "Hello Node.js", (err) => {
     //   if (err) throw err;
